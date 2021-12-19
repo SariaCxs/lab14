@@ -1,10 +1,7 @@
 import java.util.Date;
 
 class Rental {
-    public static final int CHILDRENS = 2;
-    public static final int REGULAR = 0;
-    public static final int NEW_RELEASE = 1;
-    private final Movie movie = new Movie();
+    private final Movie movie = new Movie("movie_title", Movie.REGULAR);
 
     private int _daysRented;
     public Rental(String title, int priceCode, Date start, Date end) {
